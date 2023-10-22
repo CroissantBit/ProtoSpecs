@@ -15,7 +15,7 @@ pip install --upgrade grpcio-tools
 ```bash
 mkdir build/nanopb
 cd src
-python ../generators/nanopb/generator/protoc --proto_path=generators/nanopb *.proto --nanopb_out=../build/nanopb
+python generators/nanopb/generator/protoc --proto_path=src ./src/* --nanopb_out=../build/nanopb,--strip-path:build/nanopb
 ```
 
 ## Helpful Resources for debugging

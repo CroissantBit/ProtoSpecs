@@ -15,12 +15,12 @@ pip install --upgrade grpcio-tools
 ```bash
 mkdir build/nanopb
 cd src
-python ../generators/nanopb/generator/protoc --proto_path=generators/nanopb common.proto --nanopb_out=../build/nanopb
+python ../generators/nanopb/generator/protoc --proto_path=generators/nanopb *.proto --nanopb_out=../build/nanopb
 ```
 
 ## Helpful Resources for debugging
 
-<https://protobuf-decoder.netlify.app/>
+<https://protobuf-decoder.netlify.app/>  
 <https://protogen.marcgravell.com/>
 
 ```bash

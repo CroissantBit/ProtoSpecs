@@ -1,0 +1,5 @@
+Ping.msgid = 1;
+Pong.msgid = 2;
+RegisterClient.msgid = 3;
+RegisterClientResponse.msgid = 4;
+VideoFrame.msgid = 5;

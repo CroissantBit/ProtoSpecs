@@ -2,21 +2,7 @@
 
 ## Compiling
 
-### NanoPB
-
-Install either Python 3 or 2 and run the following command to install the dependencies:
-
-```bash
-pip install --upgrade grpcio-tools
-```
-
-### Usage
-
-```bash
-mkdir build/nanopb
-cd src
-python generators/nanopb/generator/protoc --proto_path=src ./src/* --nanopb_out=../build/nanopb,--strip-path:build/nanopb
-```
+All projects that depend on this repo should pull the latest version and then compile .proto using its own compiler.
 
 ## Helpful Resources for debugging
 

@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 croissantbit.Ping msgid:1;
 croissantbit.Pong msgid:2;
 croissantbit.RegisterClient msgid:3;
 croissantbit.RegisterClientResponse msgid:4;
 croissantbit.VideoFrame msgid:5;
+=======
+Ping.msgid = 1;
+Pong.msgid = 2;
+RegisterClient.msgid = 3;
+RegisterClientResponse.msgid = 4;
+VideoFrame.msgid = 5;
+>>>>>>> 5249eff1f3e6c069ecf3a48a2cc3d16e8cc3dc61

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package croissantbit;
+
+message VideoMetadata {
+  int32 id = 1;
+  bool processing = 2;
+  string title = 3;
+  int32 duration = 4; // In milliseconds
+  int32 bpm = 5;
+  int32 size = 6; // In bytes
+  int32 bitrate = 7;
+}

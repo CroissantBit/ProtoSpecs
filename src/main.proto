@@ -1,0 +1,51 @@
+syntax = "proto3";
+package croissantbit;
+
+import "framedata.proto";
+import "metadata.proto";
+import "signaldata.proto";
+
+// Clientbound & Serverbound
+message Ping {}
+
+// Clientbound & Serverbound
+message Pong {}
+
+// Serverbound
+message RegisterClientRequest {
+  optional VideoInfo video_info = 1;
+  optional AudioInfo audio_info = 2;
+  optional SignalInfo singal_info = 3;
+}
+
+// Clientbound
+message RegisterClientResponse { int32 client_id = 1; }
+
+// Clientbound
+message VideoFrameUpdate { VideoFrame frame = 1; }
+
+// Clientbound
+message AudioFrame {}
+
+// Serverbound
+message VideoMetadataListRequest {
+  int32 per_page = 1;
+  int32 page = 2;
+}
+
+// Serverbound
+message VideoMetadataRequest { repeated int32 video_ids = 1; }
+
+// Response to both VideoMetadataListRequest and VideoMetadataRequest
+message VideoMetadataResponse { repeated VideoMetadata videos_metadata = 1; }
+
+// Clientbound
+message SignalSequenceFrameUpdate { repeated SignalSequence signals = 1; }
+
+// Serverbound
+// Example: Send on press of a button
+message SignalUpdateRequest { SignalDirection direction = 1; }
+
+// Clientbound
+// Confirm that the signal was received within a time frame to count
+message SignalUpdateResponse { bool success = 1; }

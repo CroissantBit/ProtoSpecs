@@ -1,5 +1,0 @@
-croissantbit.Ping msgid:1;
-croissantbit.Pong msgid:2;
-croissantbit.RegisterClient msgid:3;
-croissantbit.RegisterClientResponse msgid:4;
-croissantbit.VideoFrame msgid:5;

@@ -1,0 +1,17 @@
+syntax = "proto3";
+package croissantbit;
+
+enum SignalDirection {
+  LEFT = 0;
+  RIGHT = 1;
+  UP = 2;
+  DOWN = 3;
+}
+
+message SignalInfo { bool supports_signals = 3; }
+
+// Defines the time between signals
+message SignalSequence {
+  SignalDirection directions = 1;
+  int32 delay = 2; // In milliseconds
+}

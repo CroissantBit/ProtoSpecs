@@ -1,0 +1,12 @@
+croissantbit.Ping msgid:1;
+croissantbit.Pong msgid:2;
+croissantbit.RegisterClientRequest msgid:3;
+croissantbit.RegisterClientResponse msgid:4;
+croissantbit.VideoFrameUpdate msgid:5;
+croissantbit.AudioFrame msgid:6;
+croissantbit.VideoMetadataListRequest msgid:7;
+croissantbit.VideoMetadataRequest msgid:8;
+croissantbit.VideoMetadataResponse msgid:9;
+croissantbit.SignalSequenceFrameUpdate msgid:10;
+croissantbit.SignalUpdateRequest msgid:11;
+croissantbit.SignalUpdateResponse msgid:12;

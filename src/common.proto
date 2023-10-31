@@ -4,28 +4,22 @@ package croissantbit;
 import "medium.proto";
 
 // Ping request
-message Ping {
-}
+message Ping {}
 
 // Response to a ping
-message Pong {
-    
-}
+message Pong {}
 
 message RegisterClient {
-    optional VideoInfo video_info = 1;
-    optional AudioInfo audio_info = 2;
-    // Also signal / button info
+  optional VideoInfo video_info = 1;
+  optional AudioInfo audio_info = 2;
+  // Also signal / button info
 }
 
-message RegisterClientResponse {
-    optional int32 client_id = 1;
-}
+message RegisterClientResponse { optional int32 client_id = 1; }
 
 message VideoFrame {
-    oneof payload {
-        VideoFrameFull full = 1;
-        VideoFramePartial partial = 2;
-    }
+  oneof payload {
+    VideoFrameFull full = 1;
+    VideoFramePartial partial = 2;
+  }
 }
-

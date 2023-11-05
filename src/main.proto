@@ -5,6 +5,9 @@ import "framedata.proto";
 import "metadata.proto";
 import "signaldata.proto";
 
+// Each message gets a unique ID, starting at 1 and incrementing by 1 for each
+// message. main.options file must be updated to include the new message.
+
 // Clientbound & Serverbound
 message Ping {}
 

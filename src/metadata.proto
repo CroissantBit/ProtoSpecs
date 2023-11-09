@@ -10,3 +10,24 @@ message VideoMetadata {
   int32 size = 6; // In bytes
   int32 bitrate = 7;
 }
+
+message DeviceInfo {
+  int32 id = 1;
+  string friendly_name = 2;
+  bool supports_video = 3;
+  bool supports_audio = 4;
+  bool supports_control = 5;
+  int32 ping = 6;   // In milliseconds
+  int32 uptime = 7; // In seconds
+  oneof connection_type {
+    WiredDeviceInfo wired_device_info = 8;
+    WirelessDeviceInfo wireless_device_info = 9;
+  }
+}
+
+message WiredDeviceInfo { string port = 1; }
+
+message WirelessDeviceInfo {
+  string ip = 1;
+  int32 port = 2;
+}

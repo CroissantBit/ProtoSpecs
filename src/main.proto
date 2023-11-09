@@ -30,7 +30,7 @@ message RegisterClientResponse { int32 client_id = 1; }
 message VideoFrameUpdate { VideoFrame frame = 1; }
 
 // Clientbound
-message AudioFrame {}
+message AudioFrameUpdate {}
 
 // Serverbound
 message VideoMetadataListRequest {

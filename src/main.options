@@ -3,7 +3,7 @@ croissantbit.Pong msgid:2;
 croissantbit.RegisterClientRequest msgid:3;
 croissantbit.RegisterClientResponse msgid:4;
 croissantbit.VideoFrameUpdate msgid:5;
-croissantbit.AudioFrame msgid:6;
+croissantbit.AudioFrameUpdate msgid:6;
 croissantbit.VideoMetadataRequest msgid:7;
 croissantbit.VideoMetadataListRequest msgid:8;
 croissantbit.VideoMetadataResponse msgid:9;

@@ -1,3 +1,6 @@
 {
-  "recommendations": ["zxh404.vscode-proto3", "xaver.clang-format"]
+  "recommendations": [
+    "zxh404.vscode-proto3",
+    "xaver.clang-format"
+  ]
 }

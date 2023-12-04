@@ -27,7 +27,7 @@ message RegisterClientRequest {
 // Clientbound
 message RegisterClientResponse { 
   int32 client_id = 1;
-  PlayerState state = 1;
+  PlayerState state = 2;
 }
 
 // Clientbound

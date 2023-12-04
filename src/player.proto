@@ -1,4 +1,7 @@
+syntax = "proto3";
+package croissantbit;
+
 enum PlayerState {
-    IDLE,
-    ACTIVE
+    IDLE = 0;
+    ACTIVE = 1;
 }

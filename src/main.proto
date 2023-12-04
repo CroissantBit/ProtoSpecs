@@ -17,9 +17,9 @@ message Pong {}
 
 // Serverbound
 message RegisterClientRequest {
-  optional VideoInfo video_info = 1;
-  optional AudioInfo audio_info = 2;
-  optional SignalInfo signal_info = 3;
+  VideoInfo video_info = 1;
+  AudioInfo audio_info = 2;
+  SignalInfo signal_info = 3;
   bool can_control = 4; // The client is capable of controlling the server and
                         // display further information in the UI
 }

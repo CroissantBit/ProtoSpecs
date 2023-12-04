@@ -13,3 +13,7 @@ croissantbit.SignalUpdateResponse msgid:12;
 croissantbit.DeviceInfoRequest msgid:13;
 croissantbit.DeviceInfoListRequest msgid:14;
 croissantbit.DeviceInfoResponse msgid:15;
+croissantbit.PlayerPlayRequest msgid:16;
+croissantbit.PlayerStopRequest msgid:17;
+croissantbit.PlayerRequestResponse msgid:18;
+croissantbit.PlayerStateUpdate msgid:19;

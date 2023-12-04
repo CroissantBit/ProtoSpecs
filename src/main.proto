@@ -4,9 +4,10 @@ package croissantbit;
 import "framedata.proto";
 import "metadata.proto";
 import "signaldata.proto";
+import "player.proto";
 
 // Each message gets a unique ID, starting at 1 and incrementing by 1 for each
-// message. main.options file must be updated to include the new message.
+// message. ´main.options´ file must be updated to include the new message.
 
 // Clientbound & Serverbound
 message Ping {}
@@ -24,7 +25,10 @@ message RegisterClientRequest {
 }
 
 // Clientbound
-message RegisterClientResponse { int32 client_id = 1; }
+message RegisterClientResponse { 
+  int32 client_id = 1;
+  PlayerState state = 1;
+}
 
 // Clientbound
 message VideoFrameUpdate { VideoFrame frame = 1; }
@@ -68,3 +72,22 @@ message DeviceInfoListRequest {
 // Clientbound
 // Response to both DeviceInfoRequest and DeviceInfoListRequest
 message DeviceInfoResponse { repeated DeviceInfo devices = 1; }
+
+// Serverbound
+message PlayerPlayRequest {
+  int32 video_id = 1;
+}
+
+// Clientbound
+message PlayerStopRequest {}
+
+// Clientbound
+// Response to both PlayerPlayRequest and PlayerStopRequest 
+message PlayerRequestResponse { bool success = 1; }
+
+// Clientbound
+// Broadcasts message to all clients
+message PlayerStateUpdate {
+  PlayerState state = 1;
+  VideoMetadata video_metadata = 2;
+}

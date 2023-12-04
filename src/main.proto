@@ -78,7 +78,7 @@ message PlayerPlayRequest {
   int32 video_id = 1;
 }
 
-// Clientbound
+// Serverbound
 message PlayerStopRequest {}
 
 // Clientbound

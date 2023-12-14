@@ -39,6 +39,7 @@ message Pixel {
   int32 x = 1;
   int32 y = 2;
   Color color = 3;
+  int32 count = 4;
 }
 
 message Resolution {

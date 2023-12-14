@@ -25,13 +25,13 @@ message RegisterClientRequest {
 }
 
 // Clientbound
-message RegisterClientResponse { 
+message RegisterClientResponse {
   int32 client_id = 1;
   PlayerState state = 2;
 }
 
 // Clientbound
-message VideoFrameUpdate { VideoFrame frame = 1; }
+message VideoFrameUpdate { Pixel pixel = 1; }
 
 // Clientbound
 message AudioFrameUpdate {}
@@ -74,15 +74,13 @@ message DeviceInfoListRequest {
 message DeviceInfoResponse { repeated DeviceInfo devices = 1; }
 
 // Serverbound
-message PlayerPlayRequest {
-  int32 video_id = 1;
-}
+message PlayerPlayRequest { int32 video_id = 1; }
 
 // Serverbound
 message PlayerStopRequest {}
 
 // Clientbound
-// Response to both PlayerPlayRequest and PlayerStopRequest 
+// Response to both PlayerPlayRequest and PlayerStopRequest
 message PlayerRequestResponse { bool success = 1; }
 
 // Clientbound

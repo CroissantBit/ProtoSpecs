@@ -8,8 +8,6 @@ enum SignalDirection {
   DOWN = 3;
 }
 
-message SignalInfo { bool supports_signals = 3; }
-
 // Defines the time between signals
 message SignalSequence {
   SignalDirection directions = 1;

@@ -60,6 +60,9 @@ message SignalUpdateRequest { SignalDirection direction = 1; }
 // Confirm that the signal was received within a time frame to count
 message SignalUpdateResponse { bool success = 1; }
 
+// Clientbound
+message SignalStateUpdate { SignalDirection direction = 1; }
+
 // Serverbound
 message DeviceInfoRequest { repeated int32 device_ids = 1; }
 

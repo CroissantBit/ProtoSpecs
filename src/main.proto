@@ -85,7 +85,4 @@ message PlayerRequestResponse { bool success = 1; }
 
 // Clientbound
 // Broadcasts message to all clients
-message PlayerStateUpdate {
-  PlayerState state = 1;
-  VideoMetadata video_metadata = 2;
-}
+message PlayerStateUpdate { PlayerState state = 1; }
